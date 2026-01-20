@@ -1,0 +1,151 @@
+.reservation-section {
+  padding: 100px 20px;
+  background: #f1f5f3;
+}
+
+.reservation-container {
+  max-width: 550px;
+  font-family: serif;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.reserve-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 70px;
+    border-left: 3px solid #c9a24d;
+    border-right: 3px solid #c9a24d;
+    margin-bottom: 30px;
+}
+.reservation-container h2{
+  font-size: 32px;  
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+   
+}
+.reservation-subtitle{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.reservation-form{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reservation-form input,
+.reservation-form select{
+  width: 516px;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.reservation-form select{
+    width: 550px;
+  padding: 14px 16px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus{
+  border-color: #0e2a1f; /* deep green */
+}
+
+.reservation-row{
+  display: flex;
+  gap: 12px;
+}
+
+.reserve-btn{
+  margin-top: 12px;
+  padding: 14px;
+  background: #c9a24d; /* gold */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.reserve-btn:hover{
+  background: #b18e3f;
+  transform: translateY(-3px);
+}
+
+.reservation-note{
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+  .reservation-section {
+    padding: 60px 16px;
+  }
+
+  .reservation-container {
+    max-width: 100%;
+    padding: 32px 20px;
+  }
+
+  .reserve-heading {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .reservation-container h2 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .reservation-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .reservation-form input,
+  .reservation-form select {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .reservation-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .reserve-btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .reservation-note {
+    font-size: 12px;
+  }
+}
